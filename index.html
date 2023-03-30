@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+    <title>To do list</title>
+</head>
+<body>
+    <section class="todo">
+        <div class="se">
+            <h1>Voici votre liste à faire:</h1>
+        </div>
+    </section>
+    <section class="sec">
+        <div>
+            <h1>Entrer une action:</h1>
+            <input type="text" name="Titre" class="title" placeholder="Entrez votre titre ici." maxlength="32" minlength="2" required/>
+            <input type="text" name="Footer" class="footer" placeholder="Entrez votre bas d'élément ici." maxlength="32"/>
+            <textarea name="Description" class="area" placeholder="Entrez votre description ici." required rows="8" cols="21"></textarea>
+            <button class="btn" id="btn">Soumission</button>
+        </div>   
+    </section>
+</body>
+</html>

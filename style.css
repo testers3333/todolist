@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Capriola&family=Signika:wght@600&display=swap");
+
+:root {
+    --couleur-principale: #43B581;
+    --couleur-secondaire: #ed4147;
+    --couleur-back: #36393F;
+    --couleur-section: #2F3139;
+    --couleur-div: #1d1d25;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--couleur-principale);
+}
+
+body {
+    background-color: var(--couleur-back);
+}
+
+.todo .se {
+    background-color: var(--couleur-section);
+    width: 80%;
+    height: 50%;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border-radius: 30px;
+}
+
+.todo {
+    margin-top: 30px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.todo::-webkit-scrollbar {
+    background-color: var(--couleur-back);
+    width: 8px;
+    border-radius: 10px;
+}
+
+.todo::-webkit-scrollbar-thumb {
+    background-color: var(--couleur-principale);
+    border-radius: 10px;
+}
+
+.todo .se h1 {
+    display: block;
+    margin-top: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--couleur-secondaire);
+    margin-bottom: 10px;
+}
+
+.todo .se div {
+    width: 80%;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: var(--couleur-div);
+}
+
+.todo .se div:nth-child(2) {
+    display: grid;
+    margin-top: 30px;
+}
+
+.todo .se div p:nth-child(3) {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    color: var(--couleur-secondaire);
+    margin-bottom: 10px
+}
+
+.todo .se div p:nth-child(2) {
+    color: var(--couleur-secondaire);
+    padding-left: 15px;
+
+}
+
+.todo .se div h3 {
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: var(--couleur-secondaire);
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.sec {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.sec div {
+    background-color: var(--couleur-section);
+    width: 80%;
+    height: 450px;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border-radius: 30px;
+}
+
+.sec div .title, .sec div .footer {
+    background-color: var(--couleur-div);
+    border: none;
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sec div .title:focus, .sec div .footer:focus {
+    border: 3px solid var(--couleur-secondaire);
+    color: var(--couleur-secondaire);
+    outline: none;
+}
+
+.sec div .title:focus::placeholder, .sec div .footer:focus::placeholder {
+    color: var(--couleur-secondaire);
+}
+
+.sec div .title::placeholder, .sec div .footer::placeholder {
+    color: var(--couleur-principale);
+}
+
+.sec div .area {
+    resize: none;
+    background-color: var(--couleur-div);
+    border: none;
+    width: 300px;
+    text-align: start;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.sec div .area::-webkit-scrollbar {
+    background-color: var(--couleur-back);
+    width: 8px;
+    border-radius: 10px;
+}
+
+.sec div .area::-webkit-scrollbar-thumb {
+    background-color: var(--couleur-principale);
+    border-radius: 10px;
+}
+
+.sec div .area:focus::-webkit-scrollbar-thumb {
+    background-color: var(--couleur-secondaire);
+    border-radius: 10px;
+}
+
+.sec div .area:focus {
+    outline: none;
+    color: var(--couleur-secondaire);
+    border: 3px solid var(--couleur-secondaire);
+}
+
+.sec div .area:focus::placeholder {
+    color: var(--couleur-secondaire);
+}
+
+.sec div .area::placeholder {
+    color: var(--couleur-principale);
+}
+
+.sec div .btn {
+    background-color: var(--couleur-div);
+    border: none;
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--couleur-principale);
+    transition: color 0.4s ease-in-out;
+}
+
+.sec div .btn:hover {
+    color: var(--couleur-secondaire);
+    transition: color 0.4s ease-in-out;
+}
+
+.sec div h1 {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: color 0.4s ease-in-out;
+}
+
+.sec div h1:hover {
+    color: var(--couleur-secondaire);
+    transition: color 0.4s ease-in-out;
+}

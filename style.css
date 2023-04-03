@@ -231,3 +231,10 @@ body {
     color: var(--couleur-secondaire);
     transition: color 0.4s ease-in-out;
 }
+
+@media only screen and (max-width: 720px) {
+    .sec div h1, .todo .se h1 {
+        transform: scale(0.8);
+        transition: transform 0.4s ease-in-out;
+    }
+}

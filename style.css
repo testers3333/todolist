@@ -23,11 +23,11 @@ body {
     background-color: var(--couleur-section);
     width: 80%;
     height: 50%;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    border-radius: 30px;
     align-items: center;
     justify-items: center;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    border-radius: 30px;
 }
 
 .todo {
@@ -57,6 +57,19 @@ body {
     text-transform: uppercase;
     color: var(--couleur-secondaire);
     margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.todo .se div {
+    width: 80%;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: var(--couleur-div);
 }
 
 .todo .se div {
@@ -123,9 +136,9 @@ body {
     background-color: var(--couleur-div);
     border: none;
     height: 40px;
-    width: 300px;
+    width: 80%;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 10px;
     font-size: 15px;
     font-weight: bold;
 }
@@ -148,7 +161,7 @@ body {
     resize: none;
     background-color: var(--couleur-div);
     border: none;
-    width: 300px;
+    width: 80%;
     text-align: start;
     border-radius: 10px;
     font-size: 15px;
@@ -209,6 +222,9 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase;
     transition: color 0.4s ease-in-out;
+    justify-content: center;
+    text-align: center;
+    display: block;
 }
 
 .sec div h1:hover {
